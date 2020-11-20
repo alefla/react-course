@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+body {
+    font-family: Verdana, Arial, sans-serif;
+    color: #1c1c1c;
+    line-height: 1.5;
+}
+h1 {
+  text-align: center;
+  padding-top: 1rem;
+}
+p {
+  text-align: justify;
+  padding-bottom: 1rem;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.f-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: .5rem;
+}
+.f-input {
+  width: 29%;
+  font-size: 0.9rem;
+  padding: 10px 15px;
+  border: 1px solid #cecece;
+  outline: none;  
+}
+.f-input::placeholder {
+  color: rgb(68, 68, 68);
+  opacity: 0.8;
+}
+.f-submit {
+  width: 13%;
+  border: none;
+  background: #088008;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 1px 5px 5px rgb(32, 32, 32);
+}
+.course-item {
+  list-style-type: none;
+  padding: 15px 0px;
+  border-bottom: 1px solid #eaeaea;
+}
+.course-item input {
+  margin-right: 20px;
+}
+.course-item button {
+  background: #ff0000;
+  color: #fff;
+  border: 1px solid #ff0000;
+  padding: 5px 7px;
+  cursor: pointer;
+  float: right;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 1px 5px 5px rgb(32, 32, 32);
+}
+/******************
+    Theme
+******************/
+.Color {
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 1.2rem;
+}
+.light {
+  background-color: rgb(211, 211, 208);
+  color: black;
+}
+.dark {
+  background-color: rgb(70, 67, 67);;
+  color: white;
+}
+.themeBtn {
+  font-size: .9rem;
+  padding: 3px 5px;
+  background: rgb(203, 250, 227);
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 1px 5px 5px rgb(32, 32, 32);
+}
+@media only screen and (max-width: 540px)  {
+  .f-container {
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+  }
+  .f-input {
+    width: 70%;
+    margin-bottom: .3rem;
+  }
+  .f-submit {
+    margin-top: .5rem;
+    width: 15%;
+    height: 1.8rem;
+  }
+}
